@@ -1,0 +1,9 @@
+note over browser:
+User fills out the form
+and clicks "Save" button
+end note
+
+browser->spa.js: Form submit Event Handler
+spa.js->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa 
+server-->spa.js: 201 created
+spa.js-->browser: redrawNotes()
